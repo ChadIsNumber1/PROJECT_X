@@ -4,9 +4,9 @@ CEN4020L - Group 21 : 2D fighting game
 Members:
 - Andres Candido
 - Cesar Marquez
+- John Negrin
 - Morgan Wolpert
 - Nathan Wallen
-- John Negrin
 
 Some important links:
 - https://medium.com/@aboutin/host-unity-games-on-github-pages-for-free-2ed6b4d9c324
