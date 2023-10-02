@@ -1,5 +1,5 @@
 # PROJECT_X
-CEN4020L - Group 21 : 2D fighting game
+CEN4090L - Group 21 : 2D fighting game
 
 Members:
 - Andres Candido
