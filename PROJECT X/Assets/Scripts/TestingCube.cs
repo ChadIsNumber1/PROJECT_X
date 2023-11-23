@@ -16,9 +16,12 @@ public class TestingCube : MonoBehaviour
 
     void Update()
     {
+        // Most of the stuff I added is scrapped for an FSM solution
+        // Annoying to implement at first but will help us in the long run
+        /*
         MovementInputChecks();
 
-        // Light Attack to the right
+
         if (VirtualInputManager.Instance.GetLightRight()
             && !isAttacking
             && curAttkState == AnimState.Idle)
@@ -27,7 +30,7 @@ public class TestingCube : MonoBehaviour
             isAttacking = true;
         }
 
-
+        */
 
     }
 
