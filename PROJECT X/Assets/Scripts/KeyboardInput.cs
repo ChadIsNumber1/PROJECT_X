@@ -14,21 +14,33 @@ namespace projectX
         {
             if (Input.GetKey(KeyCode.D))
             {
-                VirtualInputManager.Instance.MoveRight = true;
+                VirtualInputManager.Instance.SetMoveRight(true);
             }
             else
             {
-                VirtualInputManager.Instance.MoveRight = false;
+                VirtualInputManager.Instance.SetMoveRight(false);
             }
 
             if (Input.GetKey(KeyCode.A))
             {
-                VirtualInputManager.Instance.MoveLeft = true;
+                VirtualInputManager.Instance.SetMoveLeft(true);
             }
             else
             {
-                VirtualInputManager.Instance.MoveLeft = false;
+                VirtualInputManager.Instance.SetMoveLeft(false);
             }
+
+
+            if (Input.GetKeyDown(KeyCode.X))
+            {
+                VirtualInputManager.Instance.SetLightAttk(true);
+            }
+            else
+            {
+                VirtualInputManager.Instance.SetLightAttk(false);
+            }
+
+
         }
     }
 
