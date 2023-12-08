@@ -4,12 +4,12 @@ using UnityEngine;
 public enum AnimState
 {
     Idle,
-    WalkRight,
-    WalkLeft,
+    WalkFwd,
+    WalkBack,
     LightNeutral,
     HeavyNeutral,
-    LightRight,
-    HeavyRight,
+    LightFwd,
+    HeavyFwd,
     Special,
     Blocking
 }
