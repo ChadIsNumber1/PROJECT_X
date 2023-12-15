@@ -355,8 +355,6 @@
 "Assets/Scripts/AnimatorControllerTriggers.cs"
 "Assets/Scripts/DanceParty.cs"
 "Assets/Scripts/IdleAnimSelection.cs"
-"Assets/Scripts/Player_Scripts/HealthBar_UI/HealthBars.cs"
-"Assets/Scripts/Player_Scripts/HealthBar_UI/Saved_Values.cs"
 "Assets/Scripts/Player_Scripts/P1_IdleAnimSelect.cs"
 "Assets/Scripts/SimpleCameraController.cs"
 -langversion:9.0
