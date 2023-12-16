@@ -23,7 +23,7 @@ public class Player : MonoBehaviour
     [SerializeField] private bool isHit = false;
     [SerializeField] private float attackDelay = 0f;
     [SerializeField] private float hitDelay = 0.2f;
-    [Header("Other Player Script")] // Shitty solution for now, imagine a static game manager would be used later on
+    [Header("Other Player Script")] //Bad solution!, a static game manager should be used later on
     [SerializeField] private Player otherPlayer;
 
     void Awake()
@@ -143,10 +143,10 @@ public class Player : MonoBehaviour
     {
         if (CollisionChecks(other.gameObject))
         {
-            Debug.Log(other.gameObject.name + " has been hit!");
+            Debug.Log(other.gameObject.name + " hit me!");
             isHit = true;
             // Temp damage of 10, damage value should be obtained by colliders gameobj, then its state, and the damage
-            stateMachine.ChangeState(hitState, animator, characterType, health, 10);
+            stateMachine.ChangeState(hitState, animator, characterType, health, 10f);
             hitDelay = hitState.GetFrameTime();
             Invoke("HitDone", hitDelay);
         }
