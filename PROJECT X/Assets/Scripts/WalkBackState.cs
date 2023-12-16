@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WalkFwdState : IState
+public class WalkBackState : IState
 {
-    private AnimState animationState = AnimState.WalkFwd;
+    private AnimState animationState = AnimState.WalkBack;
 
     public virtual void Enter()
     {

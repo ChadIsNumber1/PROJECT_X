@@ -18,12 +18,30 @@ public class StateMachine
         currentState.Enter(animator);
     }
 
-    public void ChangeState(IState newState)
+    public void ChangeState(IState newState, Animator animator)
     {
         if (currentState != null)
             currentState.Exit();
 
         currentState = newState;
-        currentState.Enter();
+        currentState.Enter(animator);
+    }
+
+    public void ChangeState(IState newState, Animator animator, PlayableCharacterType characterType)
+    {
+        if (currentState != null)
+            currentState.Exit();
+
+        currentState = newState;
+        currentState.Enter(animator, characterType);
+    }
+
+    public void ChangeState(IState newState, Animator animator, PlayableCharacterType characterType, Health health, int damage)
+    {
+        if (currentState != null)
+            currentState.Exit();
+
+        currentState = newState;
+        currentState.Enter(animator, characterType, health, damage);
     }
 }

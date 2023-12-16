@@ -41,8 +41,8 @@ namespace projectX
         KeyCode.S, //P1Light
         KeyCode.C, //P1Heavy
 
-        KeyCode.J, //P2Fwd
-        KeyCode.L, //P2Back
+        KeyCode.L, //P2Fwd
+        KeyCode.J, //P2Back
         KeyCode.K, //P2Light
         KeyCode.N, //P2Heavy
         };
@@ -139,7 +139,7 @@ namespace projectX
         {
             return LightAttkP2 && !WalkFwdP2;
         }
-        public bool GetLightRightP2()
+        public bool GetLightFwdP2()
         {
             return LightAttkP2 && WalkFwdP2;
         }

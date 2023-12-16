@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class IdleState : IState
 {
-    AnimState animationState = AnimState.Idle;
+    private AnimState animationState = AnimState.Idle;
 
     public virtual void Enter()
     {
@@ -16,6 +16,16 @@ public class IdleState : IState
         animator.Play(animationState.ToString());
     }
 
+    public void Enter(Animator animator, PlayableCharacterType characterType)
+    {
+        throw new System.NotImplementedException();
+    }
+
+    public void Enter(Animator animator, PlayableCharacterType characterType, Health health, int damage)
+    {
+        throw new System.NotImplementedException();
+    }
+
     public void Exit()
     {
         return;
@@ -25,6 +35,7 @@ public class IdleState : IState
     {
         return;
     }
+
 
     public void Update()
     {

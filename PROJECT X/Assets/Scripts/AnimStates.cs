@@ -11,5 +11,6 @@ public enum AnimState
     LightFwd,
     HeavyFwd,
     Special,
-    Blocking
+    Blocking,
+    Hit
 }
