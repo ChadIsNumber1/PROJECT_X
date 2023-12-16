@@ -9,6 +9,12 @@ public class ChooseCharacterManager : MonoBehaviour
     {
         NONE,
         Fighter,
+        Blue,
+        Skull,
+        Ogre,
+        Gladiator,
+        Jesus,
+        Devil
     }
 
 
