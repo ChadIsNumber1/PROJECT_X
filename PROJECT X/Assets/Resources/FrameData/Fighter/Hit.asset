@@ -15,4 +15,4 @@ MonoBehaviour:
   name: Hit
   startupTime: 0
   activeTime: 0
-  recoveryTime: 30
+  recoveryTime: 0.3
